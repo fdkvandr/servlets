@@ -6,27 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.6.0 DownloadServlet">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/dao/FlightDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/dao/TicketDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/dto/FlightDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/dto/TicketDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/entity/FlightEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/entity/FlightStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/entity/TicketEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/service/FlightService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/service/TicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/TicketServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/util/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/util/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Servlets_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Servlets_war_exploded.xml" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.7.0 Created first web application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/dao/FlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dao/FlightDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/dao/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dao/TicketDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/dto/FlightDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dto/FlightDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/dto/TicketDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dto/TicketDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/entity/FlightEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/entity/FlightEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/entity/TicketEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/entity/TicketEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/service/FlightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/util/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/util/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/util/PropertiesUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +38,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="c504e48943042875f0565a679516960dad158881" />
+        <entry key="$PROJECT_DIR$" value="197e27908f9ad231c6789bcba2ec3bca534d6bd9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -78,7 +71,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -265,7 +258,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

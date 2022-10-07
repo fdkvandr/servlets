@@ -2,6 +2,8 @@ package com.http.dao;
 
 import com.http.entity.TicketEntity;
 import com.http.util.ConnectionManager;
+import lombok.Getter;
+import lombok.SneakyThrows;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -14,6 +16,7 @@ import java.util.Optional;
 
 public class TicketDao implements Dao<Long, TicketEntity> {
 
+    @Getter
     private static final TicketDao INSTANCE = new TicketDao();
     private static final String FIND_ALL_BY_FLIGHT_ID_SQL = """
             SELECT *
@@ -24,10 +27,7 @@ public class TicketDao implements Dao<Long, TicketEntity> {
     private TicketDao() {
     }
 
-    public static TicketDao getInstance() {
-        return INSTANCE;
-    }
-
+    @SneakyThrows
     public List<TicketEntity> findAllByFlightId(Long flightId) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement preparedStatement = connection.prepareStatement(FIND_ALL_BY_FLIGHT_ID_SQL)) {
@@ -40,8 +40,6 @@ public class TicketDao implements Dao<Long, TicketEntity> {
             }
 
             return ticketEntities;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -70,18 +68,15 @@ public class TicketDao implements Dao<Long, TicketEntity> {
         return null;
     }
 
+    @SneakyThrows
     private TicketEntity buildTicketEntity(ResultSet resultSet) {
-        try {
-            return new TicketEntity(
-                    resultSet.getObject("id", Long.class),
-                    resultSet.getObject("passenger_no", String.class),
-                    resultSet.getObject("passenger_name", String.class),
-                    resultSet.getObject("flight_id", Long.class),
-                    resultSet.getObject("seat_no", String.class),
-                    resultSet.getObject("cost", BigDecimal.class)
-            );
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        return new TicketEntity(
+                resultSet.getObject("id", Long.class),
+                resultSet.getObject("passenger_no", String.class),
+                resultSet.getObject("passenger_name", String.class),
+                resultSet.getObject("flight_id", Long.class),
+                resultSet.getObject("seat_no", String.class),
+                resultSet.getObject("cost", BigDecimal.class)
+        );
     }
 }

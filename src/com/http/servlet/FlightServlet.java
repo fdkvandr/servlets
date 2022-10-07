@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/flights")
 public class FlightServlet extends HttpServlet {
 
-    public final FlightService flightService = FlightService.getInstance();
+    public final FlightService flightService = FlightService.getINSTANCE();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
