@@ -1,5 +1,9 @@
 ### IntelliJ IDEA ###
 out/
+lib/
+.idea/
+resources/application.properties
+target/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
