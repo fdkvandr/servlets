@@ -6,11 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.4.0 Getting parameters">
-      <change afterPath="$PROJECT_DIR$/resources/first.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/DownloadServlet.java" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.6.0 DownloadServlet">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/dao/FlightDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/dao/TicketDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/dto/FlightDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/dto/TicketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/entity/FlightEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/entity/FlightStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/entity/TicketEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/service/FlightService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/TicketServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/util/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/util/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Servlets_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Servlets_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Servlets.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,23 +67,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/StudyProjects/Servlets/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/StudyProjects/Servlets/lib",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.http.dto" />
+      <recent name="com.http.dto.FlightDto" />
+      <recent name="com.http.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\StudyProjects\Servlets\lib" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.http.dto" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,6 +204,7 @@
       <workItem from="1664744604428" duration="205000" />
       <workItem from="1664813909168" duration="5193000" />
       <workItem from="1664971154969" duration="1867000" />
+      <workItem from="1665071373463" duration="12847000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 First commit. Web application">
       <created>1664744791879</created>
@@ -209,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664976216943</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v1.6.0 DownloadServlet">
+      <created>1664980530824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664980530824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +297,8 @@
     <MESSAGE value="v1.0.1 Added run configuration" />
     <MESSAGE value="v1.2.0 FirstServlet" />
     <MESSAGE value="v1.4.0 Getting parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.4.0 Getting parameters" />
+    <MESSAGE value="v1.6.0 DownloadServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.6.0 DownloadServlet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
