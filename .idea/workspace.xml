@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.10.0 Added Session">
-      <change afterPath="$PROJECT_DIR$/src/com/http/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.11.0 Using attributes of session">
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665226880782</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v1.11.0 Using attributes of session">
+      <created>1665236920002</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665236920002</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +320,19 @@
     <MESSAGE value="v1.8.1" />
     <MESSAGE value="v1.9.0 Added Cookies" />
     <MESSAGE value="v1.10.0 Added Session" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.10.0 Added Session" />
+    <MESSAGE value="v1.11.0 Using attributes of session" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.11.0 Using attributes of session" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
