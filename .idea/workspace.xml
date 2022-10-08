@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.9.0 Added Cookies">
-      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.10.0 Added Session">
+      <change afterPath="$PROJECT_DIR$/src/com/http/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665225006017</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="v1.10.0 Added Session">
+      <created>1665226880782</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665226880782</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,18 +312,8 @@
     <MESSAGE value="v1.8.0 Added Lomboc. Clean code for with lomboc" />
     <MESSAGE value="v1.8.1" />
     <MESSAGE value="v1.9.0 Added Cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.9.0 Added Cookies" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="v1.10.0 Added Session" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.10.0 Added Session" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
