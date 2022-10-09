@@ -6,10 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.14.1 Clean and format code">
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.15.0 Expression language in jsp pages">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/flights.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/dto/FlightDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dto/FlightDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/service/FlightService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/http/servlet/ContentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/ContentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/TicketServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/content.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/content.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/tickets.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +30,8 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -59,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/StudyProjects/Servlets/web/WEB-INF/jsp",
+    "last_opened_file_path": "C:/StudyProjects/Servlets/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
@@ -80,8 +88,11 @@
       <recent name="com.http.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\StudyProjects\Servlets\web\WEB-INF\jsp" />
       <recent name="C:\StudyProjects\Servlets\lib" />
+      <recent name="C:\StudyProjects\Servlets\web\WEB-INF\jsp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\StudyProjects\Servlets\web\WEB-INF\jsp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.http.dto" />
@@ -299,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665325970075</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="v1.15.0 Expression language in jsp pages">
+      <created>1665330625054</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665330625054</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,18 +376,8 @@
     <MESSAGE value="v1.13.0 First jsp with Java code" />
     <MESSAGE value="v1.14.0 Jsp directives" />
     <MESSAGE value="v1.14.1 Clean and format code" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.14.1 Clean and format code" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/http/servlet/FlightServlet.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="v1.15.0 Expression language in jsp pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.15.0 Expression language in jsp pages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -22,7 +22,7 @@ public class FlightService {
                         .stream()
                         .map(flightEntity -> FlightDto.builder()
                                                       .id(flightEntity.getId())
-                                                      .descriprion("""
+                                                      .description("""
                                                                       %s - %s - %s
                                                                    """.formatted(flightEntity.getDeparture_airportCode(), flightEntity.getArrival_airportCode(), flightEntity.getStatus()))
                                                       .build()

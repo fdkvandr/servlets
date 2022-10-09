@@ -26,7 +26,7 @@ public class ContentServlet extends HttpServlet {
         req.setAttribute("flights", flightDtos);
         req.getSession()
            .setAttribute("flightMap", flightDtos.stream()
-                                                .collect(toMap(FlightDto::getId, FlightDto::getDescriprion)));
+                                                .collect(toMap(FlightDto::getId, FlightDto::getDescription)));
         req.getRequestDispatcher(JspHelper.getPath("content"))
            .forward(req, resp); // Путь указываем начиная от папки web
     }

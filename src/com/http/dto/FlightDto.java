@@ -8,5 +8,5 @@ import lombok.Value;
 public class FlightDto {
 
     Long id;
-    String descriprion;
+    String description;
 }
