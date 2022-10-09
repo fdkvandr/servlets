@@ -64,9 +64,11 @@ public class FlightDao implements Dao<Long, FlightEntity> {
         return new FlightEntity(
                 resultSet.getObject("id", Long.class),
                 resultSet.getObject("flight_no", String.class),
-                resultSet.getObject("departure_date", Timestamp.class).toLocalDateTime(),
+                resultSet.getObject("departure_date", Timestamp.class)
+                         .toLocalDateTime(),
                 resultSet.getObject("departure_airport_code", String.class),
-                resultSet.getObject("arrival_date", Timestamp.class).toLocalDateTime(),
+                resultSet.getObject("arrival_date", Timestamp.class)
+                         .toLocalDateTime(),
                 resultSet.getObject("arrival_airport_code", String.class),
                 resultSet.getObject("aircraft_id", Integer.class),
                 FlightStatus.valueOf(resultSet.getObject("status", String.class))

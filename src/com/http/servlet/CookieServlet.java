@@ -24,9 +24,9 @@ public class CookieServlet extends HttpServlet {
 
         Cookie[] cookies = req.getCookies();
         if (cookies == null || Arrays.stream(cookies)
-                .filter(cookie -> UNIQUE_ID.equals(cookie.getName()))
-                .findFirst()
-                .isEmpty()) {
+                                     .filter(cookie -> UNIQUE_ID.equals(cookie.getName()))
+                                     .findFirst()
+                                     .isEmpty()) {
             Cookie cookie = new Cookie(UNIQUE_ID, "1"); // Смотрим, если у пользователя еще нету такой куки, то мы создаем новую куку, и возвращаем ее. Инкрементируем счетчик. Тогда, второй раз, когда он обратиться - кука уже будет и счетчик не синкрементируется -> посчитаем так количество уникальных пользователей
             cookie.setPath("/cookies"); // Если хотим, чтобы куки определялась и по другому домену
             cookie.setMaxAge(15 * 60); // Длительность жизни. По умолчанию "-1", что означает, что кука живет пока браузер не закроется

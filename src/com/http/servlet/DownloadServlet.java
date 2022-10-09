@@ -29,7 +29,8 @@ public class DownloadServlet extends HttpServlet {
 
 //        byte[] bytes = Files.readAllBytes(Path.of("resources", " first.json")); // Так не получится
         try (ServletOutputStream writer = resp.getOutputStream();
-             InputStream stream = DownloadServlet.class.getClassLoader().getResourceAsStream("first.json")) {
+             InputStream stream = DownloadServlet.class.getClassLoader()
+                                                       .getResourceAsStream("first.json")) {
             byte[] bytes = stream.readAllBytes();
             resp.setContentLength(bytes.length);
             writer.write(bytes);

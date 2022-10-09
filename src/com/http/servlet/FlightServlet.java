@@ -24,13 +24,14 @@ public class FlightServlet extends HttpServlet {
         try (PrintWriter writer = resp.getWriter()) {
             writer.write("<h1>Список перелетов:</h1>");
             writer.write("<ul>");
-            flightService.findAll().forEach(flightDto -> {
-                writer.write("""
-                        <li>
-                            <a href="/tickets?flightId=%d">%s</a>
-                        </li>
-                        """.formatted(flightDto.getId(), flightDto.getDescriprion()));
-            });
+            flightService.findAll()
+                         .forEach(flightDto -> {
+                             writer.write("""
+                                          <li>
+                                              <a href="/tickets?flightId=%d">%s</a>
+                                          </li>
+                                          """.formatted(flightDto.getId(), flightDto.getDescriprion()));
+                         });
             writer.write("</ul>");
         }
     }

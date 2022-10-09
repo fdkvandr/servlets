@@ -26,11 +26,12 @@ public class TicketServlet extends HttpServlet {
         try (PrintWriter writer = resp.getWriter()) {
             writer.write("<h1>Купленные билеты:</h1>");
             writer.write("<ul>");
-            ticketService.findAllByFlightId(flightId).forEach(ticketDto -> writer.write("""
-                    <li>
-                        %s
-                    </li>
-                    """.formatted(ticketDto.getSeatNo())));
+            ticketService.findAllByFlightId(flightId)
+                         .forEach(ticketDto -> writer.write("""
+                                                            <li>
+                                                                %s
+                                                            </li>
+                                                            """.formatted(ticketDto.getSeatNo())));
             writer.write("</ul>");
         }
     }
