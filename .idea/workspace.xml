@@ -6,9 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.12.0 Using forward/include/redirect">
-      <change afterPath="$PROJECT_DIR$/web/tickets.jsp" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.13.0 First jsp with Java code">
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/ContentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/util/JspHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/content.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,11 +63,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/StudyProjects/Servlets/lib",
+    "last_opened_file_path": "C:/StudyProjects/Servlets/web/WEB-INF/jsp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -77,6 +84,7 @@
       <recent name="com.http.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\StudyProjects\Servlets\web\WEB-INF\jsp" />
       <recent name="C:\StudyProjects\Servlets\lib" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -274,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665242231676</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="v1.13.0 First jsp with Java code">
+      <created>1665322014629</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665322014629</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +345,8 @@
     <MESSAGE value="v1.10.0 Added Session" />
     <MESSAGE value="v1.11.0 Using attributes of session" />
     <MESSAGE value="v1.12.0 Using forward/include/redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.12.0 Using forward/include/redirect" />
+    <MESSAGE value="v1.13.0 First jsp with Java code" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.13.0 First jsp with Java code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
