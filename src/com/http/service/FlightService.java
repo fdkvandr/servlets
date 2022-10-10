@@ -2,20 +2,20 @@ package com.http.service;
 
 import com.http.dao.FlightDao;
 import com.http.dto.FlightDto;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class FlightService {
 
     @Getter
     private static final FlightService INSTANCE = new FlightService();
     private final FlightDao flightDao = FlightDao.getINSTANCE();
-
-    private FlightService() {
-    }
 
     public List<FlightDto> findAll() {
         return flightDao.findAll()

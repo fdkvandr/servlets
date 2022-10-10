@@ -3,21 +3,21 @@ package com.http.service;
 import com.http.dao.FlightDao;
 import com.http.dao.TicketDao;
 import com.http.dto.TicketDto;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TicketService {
 
     @Getter
-    private static TicketService INSTANCE = new TicketService();
+    private static final TicketService INSTANCE = new TicketService();
     private final TicketDao ticketDao = TicketDao.getINSTANCE();
-
-    public TicketService() {
-    }
 
     public List<TicketDto> findAllByFlightId(Long flightId) {
         return ticketDao.findAllByFlightId(flightId)
