@@ -11,16 +11,19 @@ public class CreateUserMapper implements Mapper<CreateUserDto, UserEntity> {
 
     @Getter
     private static final CreateUserMapper INSTANCE = new CreateUserMapper();
+    private static final String IMAGE_FOLDER = "users/";
 
     @Override
     public UserEntity mapFrom(CreateUserDto object) {
         return UserEntity.builder()
-                               .name(object.getName())
-                               .birthdate(LocalDateFormatter.format(object.getBirthday()))
-                               .email(object.getEmail())
-                               .password(object.getPassword())
-                               .gender(UserGender.valueOf(object.getGender()))
-                               .role(UserRole.valueOf(object.getRole()))
-                               .build();
+                         .name(object.getName())
+                         .birthdate(LocalDateFormatter.format(object.getBirthday()))
+                         .email(object.getEmail())
+                         .image(IMAGE_FOLDER + object.getImage()
+                                                     .getSubmittedFileName())
+                         .password(object.getPassword())
+                         .gender(UserGender.valueOf(object.getGender()))
+                         .role(UserRole.valueOf(object.getRole()))
+                         .build();
     }
 }

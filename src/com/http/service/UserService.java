@@ -10,17 +10,20 @@ import com.http.validator.ValidationResult;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.SneakyThrows;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserService {
 
     @Getter
     private static final UserService INSTANSE = new UserService();
-
     private final CreateUserValidator createUserValidator = CreateUserValidator.getINSTANCE();
     private final UserDao userDao = UserDao.getINSTANCE();
     private final CreateUserMapper createUserMapper = CreateUserMapper.getINSTANCE();
-    public Integer create(CreateUserDto createUserDto){
+    private final ImageService imageService = ImageService.getINSTANCE();
+
+    @SneakyThrows
+    public Integer create(CreateUserDto createUserDto) {
 
         //validation
         //map
@@ -33,6 +36,9 @@ public class UserService {
         }
 
         UserEntity userEntity = createUserMapper.mapFrom(createUserDto);
+
+        imageService.upload(userEntity.getImage(), createUserDto.getImage()
+                                                                .getInputStream());
 
         userDao.save(userEntity);
 

@@ -7,17 +7,21 @@ import com.http.exceptions.ValidationException;
 import com.http.service.UserService;
 import com.http.util.JspHelper;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
 
 import java.io.IOException;
 
 @WebServlet("/registration")
+@MultipartConfig(fileSizeThreshold = 1024 * 1024)
 public class RegistrationServlet extends HttpServlet {
 
     private final UserService userService = UserService.getINSTANSE();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -29,10 +33,12 @@ public class RegistrationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         CreateUserDto userDto = CreateUserDto.builder()
                                              .name(req.getParameter("name"))
                                              .birthday(req.getParameter("birthday"))
                                              .email(req.getParameter("email"))
+                                             .image(req.getPart("image"))
                                              .password(req.getParameter("password"))
                                              .role(req.getParameter("role"))
                                              .gender(req.getParameter("gender"))

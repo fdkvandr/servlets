@@ -17,6 +17,7 @@ public class UserEntity {
     private String name;
     private LocalDate birthdate;
     private String email;
+    private String image;
     private String password;
     private UserRole role;
     private UserGender gender;
