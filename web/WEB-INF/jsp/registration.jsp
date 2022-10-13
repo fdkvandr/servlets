@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+    <img width="250px" height="200px" src="${pageContext.request.contextPath}/images/users/42.jpg" alt="User image">
+    <img width="200px" height="200px" src="https://safety-rest.ru/upload/iblock/638/uznayte-bolshe-o-frantsii.jpg" alt="some_image">
     <form action="${pageContext.request.contextPath}/registration" method="post" enctype="multipart/form-data">
         <label for="nameId">Name:
             <input type="text" name="name" id="nameId">

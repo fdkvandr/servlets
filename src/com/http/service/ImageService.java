@@ -10,6 +10,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.Optional;
 
 import static java.nio.file.StandardOpenOption.*;
 
@@ -28,5 +29,12 @@ public class ImageService {
             Files.createDirectories(imageFullPath.getParent()); // Создание всех директорий, если их нету
             Files.write(imageFullPath, imageContent.readAllBytes(), CREATE, TRUNCATE_EXISTING); // Опции говорят - создать если его нету, и не падать, если существует файл с таким именем
         }
+    }
+
+    @SneakyThrows
+    public Optional<InputStream> get(String imagePath) {
+        
+        Path imageFullPath = Path.of(basePath, imagePath);
+        return Files.exists(imageFullPath) ? Optional.of(Files.newInputStream(imageFullPath)) : Optional.empty();
     }
 }

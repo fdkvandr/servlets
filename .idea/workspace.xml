@@ -6,17 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.18.0 Full path from jsp page to DB save">
-      <change afterPath="$PROJECT_DIR$/src/com/http/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.19.0 Upload image and save to DB">
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/ImageServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/dto/CreateUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dto/CreateUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/mapper/CreateUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/mapper/CreateUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/service/ImageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +198,7 @@
       <workItem from="1664971154969" duration="1867000" />
       <workItem from="1665071373463" duration="12847000" />
       <workItem from="1665427103797" duration="11749000" />
-      <workItem from="1665604296122" duration="5692000" />
+      <workItem from="1665604296122" duration="9443000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 First commit. Web application">
       <created>1664744791879</created>
@@ -347,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665436946866</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="v1.19.0 Upload image and save to DB">
+      <created>1665618002938</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665618002938</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +411,8 @@
     <MESSAGE value="v1.17.0 Form tag HTML" />
     <MESSAGE value="v1.17.1 Clean code" />
     <MESSAGE value="v1.18.0 Full path from jsp page to DB save" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.18.0 Full path from jsp page to DB save" />
+    <MESSAGE value="v1.19.0 Upload image and save to DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.19.0 Upload image and save to DB" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
