@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <error-page>
+<!--    <error-page>-->
 <!--        Можно поставить срабатывание напирмер только на exceptionType-->
-        <exception-type>java.lang.Throwable</exception-type>
+<!--        <exception-type>java.lang.Throwable</exception-type>-->
 
 <!--        Либо можно поставить срабатывание например на код ошибки-->
 <!--        <error-code>500</error-code>-->
 <!--        А можно вообще не указывать два верхних тега-->
-        <location>/WEB-INF/jsp/500.jsp</location>
-    </error-page>
+<!--        <location>/WEB-INF/jsp/500.jsp</location>-->
+<!--    </error-page>-->
 </web-app>
