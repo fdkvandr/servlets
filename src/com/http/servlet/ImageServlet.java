@@ -2,6 +2,7 @@ package com.http.servlet;
 
 
 import com.http.service.ImageService;
+import com.http.util.UrlPath;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -13,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-@WebServlet("/images/*") // используем паттерн, чтобы все запросы начиная с images шли сюда
+@WebServlet(UrlPath.IMAGES + "/*") // используем паттерн, чтобы все запросы начиная с images шли сюда
 public class ImageServlet extends HttpServlet {
 
     private final ImageService imageService = ImageService.getINSTANCE();
