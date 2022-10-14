@@ -6,17 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.21.0 Servlet Filters">
-      <change afterPath="$PROJECT_DIR$/src/com/http/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.22.1 Return web.xml">
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/entity/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/SessionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +198,7 @@
       <workItem from="1665071373463" duration="12847000" />
       <workItem from="1665427103797" duration="11749000" />
       <workItem from="1665604296122" duration="17239000" />
-      <workItem from="1665778919990" duration="5456000" />
+      <workItem from="1665778919990" duration="5870000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 First commit. Web application">
       <created>1664744791879</created>
@@ -368,7 +361,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665691938409</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="v1.22.0 Authentication">
+      <created>1665785101233</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665785101233</updated>
+    </task>
+    <task id="LOCAL-00025" summary="v1.22.1 Return web.xml">
+      <created>1665785140803</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665785140803</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +442,9 @@
     <MESSAGE value="v1.19.0 Upload image and save to DB" />
     <MESSAGE value="v1.20.0 Load image on client" />
     <MESSAGE value="v1.21.0 Servlet Filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.21.0 Servlet Filters" />
+    <MESSAGE value="v1.22.0 Authentication" />
+    <MESSAGE value="v1.22.1 Return web.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.22.1 Return web.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
