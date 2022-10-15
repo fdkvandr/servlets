@@ -6,11 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.24.0 Authorization">
-      <change afterPath="$PROJECT_DIR$/resources/translations.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/translations_ru_RU.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/locale/LocaleRunner.java" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.25.0 Internationalization and Localization">
+      <change afterPath="$PROJECT_DIR$/src/com/http/servlet/LocaleServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/translations.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/translations.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/translations_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/translations_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/filter/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/filter/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/http/util/UrlPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/util/UrlPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -104,7 +108,7 @@
       <recent name="com.http.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LocaleRunner">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.26">
     <configuration name="LocaleRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.http.locale.LocaleRunner" />
       <module name="Servlets" />
@@ -234,7 +238,7 @@
       <workItem from="1665071373463" duration="12847000" />
       <workItem from="1665427103797" duration="11749000" />
       <workItem from="1665604296122" duration="17239000" />
-      <workItem from="1665778919990" duration="13237000" />
+      <workItem from="1665778919990" duration="16566000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 First commit. Web application">
       <created>1664744791879</created>
@@ -425,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665788214036</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="v1.25.0 Internationalization and Localization">
+      <created>1665834666224</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1665834666224</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v1.0.1 Added run configuration" />
     <MESSAGE value="v1.2.0 FirstServlet" />
     <MESSAGE value="v1.4.0 Getting parameters" />
     <MESSAGE value="v1.6.0 DownloadServlet" />
@@ -495,7 +505,8 @@
     <MESSAGE value="v1.22.1 Return web.xml" />
     <MESSAGE value="v1.23.0 Logout" />
     <MESSAGE value="v1.24.0 Authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.24.0 Authorization" />
+    <MESSAGE value="v1.25.0 Internationalization and Localization" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.25.0 Internationalization and Localization" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
