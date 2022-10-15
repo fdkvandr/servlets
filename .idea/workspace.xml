@@ -6,12 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.23.0 Logout">
-      <change afterPath="$PROJECT_DIR$/src/com/http/filter/AuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/http/util/UrlPath.java" afterDir="false" />
+    <list default="true" id="75d7f966-5c79-4b4e-957c-82a0f9d2b36f" name="Changes" comment="v1.24.0 Authorization">
+      <change afterPath="$PROJECT_DIR$/resources/translations.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/translations_ru_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/http/locale/LocaleRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/ImageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/ImageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/http/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/http/servlet/LoginServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a7491ddd-6b5b-49b1-817e-1e01f69fa67d" />
+        <option name="url" value="https://github.com/fdkvandr/servlets.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/http/locale/LocaleRunner.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -54,27 +64,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/StudyProjects/Servlets/lib&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.HTML&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/StudyProjects/Servlets/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.http.dto" />
@@ -82,6 +93,7 @@
       <recent name="com.http.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\StudyProjects\Servlets\resources" />
       <recent name="C:\StudyProjects\Servlets\lib" />
       <recent name="C:\StudyProjects\Servlets\web\WEB-INF\jsp" />
     </key>
@@ -92,7 +104,20 @@
       <recent name="com.http.dto" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LocaleRunner">
+    <configuration name="LocaleRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.http.locale.LocaleRunner" />
+      <module name="Servlets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.http.locale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.26" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -182,6 +207,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.LocaleRunner" />
+      <item itemvalue="Tomcat Server.Tomcat 10.0.26" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LocaleRunner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -200,7 +234,7 @@
       <workItem from="1665071373463" duration="12847000" />
       <workItem from="1665427103797" duration="11749000" />
       <workItem from="1665604296122" duration="17239000" />
-      <workItem from="1665778919990" duration="8556000" />
+      <workItem from="1665778919990" duration="13237000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 First commit. Web application">
       <created>1664744791879</created>
@@ -384,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665785840705</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="v1.24.0 Authorization">
+      <created>1665788214036</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665788214036</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v1.0.0 First commit. Web application" />
     <MESSAGE value="v1.0.1 Added run configuration" />
     <MESSAGE value="v1.2.0 FirstServlet" />
     <MESSAGE value="v1.4.0 Getting parameters" />
@@ -454,7 +494,8 @@
     <MESSAGE value="v1.22.0 Authentication" />
     <MESSAGE value="v1.22.1 Return web.xml" />
     <MESSAGE value="v1.23.0 Logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.23.0 Logout" />
+    <MESSAGE value="v1.24.0 Authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.24.0 Authorization" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
